@@ -26,7 +26,7 @@ const NavBar = ({
       <Menu toggleMenu={toggleMenu} menuBar={menuBar} />
       <Nav ref={header}>
         <Brand>
-          <BrandLogo src="src/assets/IMG-20230708-WA0010.jpg" alt="" />
+          <BrandLogo src="./assets/IMG-20230708-WA0010.jpg" alt="" />
         </Brand>
         <LinkCont ref={menu}>
           <NavLink>

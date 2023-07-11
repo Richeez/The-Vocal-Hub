@@ -16,7 +16,7 @@ const Home = ({ home }) => {
           <Button>get started</Button>
         </div>
         <Animate>
-          <ImageBox src={"src/assets/IMG-20230708-WA0014.jpg"} />
+          <ImageBox src={"./assets/IMG-20230708-WA0014.jpg"} />
         </Animate>
       </StyledHome>
     </Container>
