@@ -42,7 +42,7 @@ const Globalstyles = createGlobalStyle`
   @media screen and (max-width: 40rem) {
     width: 50% !important;
     opacity: 1 !important;
-    pointer-events: all;
+    pointer-events: all !important;
   transition: all 1s ease-in;
     
   }
