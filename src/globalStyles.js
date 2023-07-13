@@ -12,7 +12,7 @@ const Globalstyles = createGlobalStyle`
 
 :root{
   --bg-color:#c0c0c0;
-  --secondary-color: #b60d45;
+  --secondary-color: #FF19D9FF;
   --light-pink: #c76586;
   --nav-color:#b60d45;
   --white-color:#ffff;
