@@ -10,11 +10,14 @@ const Globalstyles = createGlobalStyle`
   /* scroll-margin-top: 15rem; */
 }
 
+
 :root{
-  --bg-color:#c0c0c0;
+  --bg-color:#f8f3f3;
   --secondary-color: #FF19D9FF;
-  --light-pink: #c76586;
-  --nav-color:#b60d45;
+  --secondary-color-dk: #e70bc3;
+  --light-pink: #fd40de;
+  --lighter-pink: #f85bde;
+  --nav-color:#FF19D9FF;
   --white-color:#ffff;
   --font-family:  "Poppins", sans-serif;
   --light-white-color: rgba(255, 255, 255, 0.211);
@@ -46,7 +49,43 @@ const Globalstyles = createGlobalStyle`
   transition: all 1s ease-in;
     
   }
-} 
+}
+
+.clip-path {
+  background: linear-gradient(to bottom left, var(--light-pink), var(--secondary-color) 80%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 61%, 0 84%);
+          clip-path: polygon(0 0, 100% 0, 100% 61%, 0 84%);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  position: absolute;
+
+  display: grid;
+grid-template-columns: 1fr;
+/* gap: 1rem; */
+overflow: hidden;
+/* background-color: orange; */
+place-items:center ;
+/* background: var(--light-pink); */
+padding-block: 8.5rem;
+position: relative;
+/* flex-direction: column; */
+/* background-color: var(--transparent-black); */
+/* background-blend-mode:multiply; */
+
+@media screen and (min-width: 45rem) {
+    /* min-height: 100vh; */
+    padding-block: 2rem;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+max-width: 90rem;
+
+        
+        
+    }
+
+}
 
 .imageBox{
     width: 100%;

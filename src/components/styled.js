@@ -5,7 +5,8 @@ export const Container = styled.section`
 width: 100%;
 padding-bottom: 2rem;
 min-height: 50vh;
-
+position: relative;
+overflow: hidden;
 &:nth-of-type(1){
     min-height: 100vh;
     
@@ -39,12 +40,12 @@ align-items: center;
 justify-content: center;
 border-radius: .5rem;
 font-size: .9rem;
-background-color:var(--dark-chocolate);
+background-color:var(--white-color);
 transition: var(--transition);
 cursor: pointer;
 border: none;
 outline: none;
-color: var(--white-color);
+color: var(--secondary-color);
 
 &:hover{
     filter: brightness(2);

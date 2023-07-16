@@ -9,15 +9,17 @@ const Home = ({ home }) => {
   return (
     <Container>
       <StyledHome ref={home}>
-        <div className="main-header">
-          <p>welcome to</p>
-          <h1>the vocal hub</h1>
-          {/* <button>get started</button> */}
-          <Button>get started</Button>
+        <div className="clip-path">
+          <div className="main-header">
+            <p>welcome to</p>
+            <h1>the vocal hub</h1>
+            {/* <button>get started</button> */}
+            <Button>get started</Button>
+          </div>
+          <Animate>
+            <ImageBox src={"./assets/IMG-20230708-WA0013.jpg"} />
+          </Animate>
         </div>
-        <Animate>
-          <ImageBox src={"./assets/IMG-20230708-WA0014.jpg"} />
-        </Animate>
       </StyledHome>
     </Container>
   );

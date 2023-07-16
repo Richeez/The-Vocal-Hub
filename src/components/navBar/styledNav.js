@@ -12,6 +12,8 @@ background: linear-gradient(var(--secondary-color), var(--light-pink)) ;
   transition: all 1s ease-in-out;
   display: flex;
   align-items: center;
+/* overflow: hidden; */
+
   /* justify-content: center; */
   color: var(--text-color);
   /* background: yellow; */
@@ -35,7 +37,9 @@ opacity: 0;
 pointer-events: none;
 user-select: none;
 transition: all 1s ease-in-out;
-background: linear-gradient( to top, var(--secondary-color), var(--light-pink)) ;
+/* box-shadow: 1px 2px 3px, 1px 2px 3px; */
+background: linear-gradient( var(--lighter-pink), var(--secondary-color-dk), var(--secondary-color-dk)) ;
+/* box-shadow: 1px 3px 5px var(--lighter-pink); */
 top: -60%;
 margin-top: 8rem;
 color: var(--white-color);
@@ -65,7 +69,7 @@ gap: 2rem;
 user-select: all;
 transition: all 1s ease-in;
         margin: 0;
-        background-color: unset;
+        /* background-color: unset; */
 
         
         

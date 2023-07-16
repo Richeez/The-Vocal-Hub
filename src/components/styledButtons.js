@@ -21,6 +21,12 @@ backdrop-filter:blur(.2rem);
 background-color: var(--white-color);
 color: var(--secondary-color);
 
+&:hover{
+    filter: brightness(2);
+    transition: var(--transition);
+
+
+}
 
 &::before,::after{
     display: flex;
