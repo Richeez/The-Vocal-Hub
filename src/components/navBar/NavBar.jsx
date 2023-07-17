@@ -17,6 +17,8 @@ const NavBar = ({
   scrollToPage,
   home,
   about,
+  testimonials,
+  blog,
   services,
   header,
   contact,
@@ -38,6 +40,12 @@ const NavBar = ({
           </NavLink>
           <NavLink>
             <Link onClick={() => scrollToPage(services)}>services</Link>
+          </NavLink>
+          <NavLink>
+            <Link onClick={() => scrollToPage(testimonials)}>testimonials</Link>
+          </NavLink>
+          <NavLink>
+            <Link onClick={() => scrollToPage(blog)}>blog</Link>
           </NavLink>
           <NavLink>
             <Link onClick={() => scrollToPage(contact)}>contact us</Link>

@@ -1,32 +1,24 @@
 import styled from "styled-components";
 
 export const StyledHome = styled.div`
-/* background: url(images/bg-img.jpeg), no-repeat; */
 width: 100%;
-/* min-height: 50vh; */
-/* display: grid; */
-/* grid-template-columns: 1fr; */
-/* gap: 1rem; */
-/* overflow: hidden; */
-/* background-color: orange; */
-/* place-items:center ; */
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
 background: var(--bg-color); 
-/* padding-block: 8.5rem; */
-/* position: relative; */
-/* flex-direction: column; */
-/* background-color: var(--transparent-black); */
-/* background-blend-mode:multiply; */
 
-/* @media screen and (min-width: 45rem) {
-    /* min-height: 100vh; 
-    padding-block: 2rem;
-
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-/* max-width: 90rem; 
-
-        
-        
-    } */
+> p{
+    width: 100%;
+    padding: .5rem;
+    font-size: 1.5rem;
+    margin-top: -12rem;
+    /* border-top: 1px solid; */
+    text-align: center;
+    @media screen and (min-width: 45rem) {
+        width: 60%;
+    }
+}
 
 .main-header{
     display: flex;
@@ -42,8 +34,10 @@ padding: 1rem;
 width: 100%;
 align-self: center;
 
+@media screen and (min-width: 45rem) {
+     margin-top: -8rem;
+}
 
-    margin-top: -8rem;
 
 /* width: clamp( 200px, 45rem, 80vw); */
 

@@ -253,6 +253,172 @@ body{
 .span-col-full{
 }
 
+//? REUSEABLE STYLES
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  width: 100%;
+  align-items: start;
+  place-items: center;
+  @media screen and (min-width: 45rem) {
+      place-items:start;
+  }
+}
+
+.lists{
+width: 100%;
+    .list{
+        width: 100%;
+        gap: 1rem;
+        li{
+        font-size: 1rem;
+        line-height: 1.9rem;
+        //text-align: center !important;
+        width: 100%;
+        word-wrap: normal;
+        @media screen and (min-width: 45rem) {
+         //   text-align: left !important;
+        }
+    }
+
+
+       } 
+     h2{
+    letter-spacing: -1.296px;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.5rem;
+    /* width: 548px; */
+    word-wrap: normal;
+    @media screen and (min-width: 45rem) {
+        line-height: 3.5rem;
+    font-size: 2.8rem;
+    text-align: left;
+    
+}
+       }
+       button{
+    background: var(--color-white);
+    color: var( --primary-color);
+    text-transform: capitalize;
+    width: max-content;
+    border-radius: 2rem;
+    font-size: inherit;
+    padding: 0.9rem 2.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: var(--transition);
+&:hover{
+    color: var(--color-white) !important;
+    background-color: var(--primary-color) !important;
+
+}
+
+}
+}
+
+.videoBox{
+    width: 100%;
+    border-radius: 2rem;
+    overflow: hidden;
+    
+}
+
+.textBox{
+    gap: 1.3rem;
+    width: 100%;
+    font-family: inherit;
+    align-items: center;
+    justify-content: center;
+    
+    @media screen and (min-width: 45rem) {
+        align-items: flex-start;
+            justify-content: flex-start;
+    }
+    
+
+h1, h2, h3{
+    letter-spacing: -1.296px;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.5rem;
+    /* width: 548px; */
+    word-wrap: normal;
+    @media screen and (min-width: 45rem) {
+        line-height: 3.5rem;
+    font-size: 2.8rem;
+    text-align: left;
+    
+}
+
+}
+p{
+    font-size: 1.1rem;
+    line-height: 1.9rem;
+    text-align: center;
+    width: 100%;
+    word-wrap: normal;
+    /* font-weight: 500; */
+    @media screen and (min-width: 45rem) {
+        text-align: left;
+    }
+}
+
+button{
+    background: var(--primary-color);
+    color: var(--color-white);
+    text-transform: capitalize;
+    width: max-content;
+    border-radius: 2rem;
+    font-size: inherit;
+    padding: 0.9rem 2.5rem;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+}
+
+.df{
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 45rem) {
+        justify-content: space-between;
+    }
+
+}
+
+
+
+
+
+ .fdirc{
+    flex-direction: column;
+} 
+ .jsb{
+     flex-direction: column;
+     @media screen and (min-width: 45rem) {
+    justify-content: space-between;
+    flex-direction: row;
+
+    }
+
+} 
+.jcc{
+justify-content: center;
+} 
+
+ .aic{
+    align-items: center;
+
+}
+ .tac{
+text-align: center;
+}
+
 ::-webkit-scrollbar {
   width: 0.5rem;
   height: 0.2rem;

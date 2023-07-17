@@ -9,7 +9,7 @@ font-size: 1.5rem;
 font-weight: bold;
 outline: none;
 /* border: none; */
-border: 2px solid var(--secondary-color);
+border: 2px solid var(--secondary-color-dk);
 margin: 0 auto;
 cursor: pointer;
 text-transform: capitalize;
@@ -19,7 +19,7 @@ overflow: hidden;
 backdrop-filter:blur(.2rem);
 /* background: linear-gradient(to bottom right, var(--lighter-white-color), var(--lighter-white-color), var(--light-white-color)); */
 background-color: var(--white-color);
-color: var(--secondary-color);
+color: var(--secondary-color-dk);
 
 &:hover{
     filter: brightness(2);

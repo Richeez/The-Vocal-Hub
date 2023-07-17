@@ -8,6 +8,9 @@ function App() {
   const header = useRef(null);
   const menu = useRef(null);
   const home = useRef(null);
+  const about = useRef(null);
+  const testimonials = useRef(null);
+  const blog = useRef(null);
   const services = useRef(null);
   const contact = useRef(null);
   // const [isInView, setIsInView] = useState(false);
@@ -63,13 +66,24 @@ function App() {
         scrollToPage={scrollToPage}
         home={home}
         contact={contact}
+        about={about}
+        testimonials={testimonials}
+        blog={blog}
         // isInView={isInView}
         services={services}
         toggleMenu={toggleMenu}
         menuBar={menuBar}
         menu={menu}
       />
-      <MainContent contact={contact} home={home} services={services} />
+      <MainContent
+        about={about}
+        testimonials={testimonials}
+        blog={blog}
+        contact={contact}
+        home={home}
+        scrollToPage={scrollToPage}
+        services={services}
+      />
       <Footer />
     </>
   );
